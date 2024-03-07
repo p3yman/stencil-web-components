@@ -7,13 +7,6 @@ export const config: Config = {
       type: 'dist',
       empty: true,
     },
-    // {
-    //   type: 'dist-custom-elements',
-    //   customElementsExportBehavior: 'single-export-module',
-    //   empty: true,
-    //   generateTypeDeclarations: false,
-    //   minify: true,
-    // },
   ],
   sourceMap: false,
   testing: {
