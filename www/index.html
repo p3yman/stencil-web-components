@@ -1,0 +1,11 @@
+<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>Stencil Component Starter</title> <link rel="stylesheet" href="/build/instruqt.css"> <script type="module" src="/build/instruqt.esm.js" data-stencil></script> <script nomodule="" src="/build/instruqt.js" data-stencil></script> </head> <body> <instruqt-alert> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero architecto laudantium praesentium, magni voluptatum quos quasi! Blanditiis, facilis possimus laborum optio,
+      vitae tempore consequuntur sit, ullam repellat quas temporibus. </instruqt-alert> <script>
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  // auto-unregister service worker during dev mode
+  navigator.serviceWorker.getRegistration().then(function(registration) {
+    if (registration) {
+      registration.unregister().then(function() { location.reload(true) });
+    }
+  });
+}
+</script></body></html>
