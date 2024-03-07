@@ -1,1 +1,0 @@
-import{r as e,h as s,H as t}from"./index-8e5c4f45.js";const c=class{constructor(s){e(this,s)}render(){return s(t,{key:"b9503eed014e06748a93b56458f807ee383ec25c"},s("slot",{key:"bb7ea14db9a8bb20bc05fb151fd08cda129f264f"}))}};c.style=":host{display:block}";export{c as instruqt_section}

@@ -2,10 +2,10 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   namespace: 'instruqt',
+  globalStyle: 'src/global/global.css',
   outputTargets: [
     {
-      type: 'dist',
-      empty: true,
+      type: 'www',
     },
   ],
   sourceMap: false,
@@ -14,6 +14,6 @@ export const config: Config = {
   },
   hashFileNames: false,
   devServer: {
-    initialLoadUrl: '/src',
+    initialLoadUrl: '/www',
   },
 };
