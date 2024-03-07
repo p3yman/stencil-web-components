@@ -4,12 +4,16 @@ export const config: Config = {
   namespace: 'instruqt',
   outputTargets: [
     {
-      type: 'dist-custom-elements',
-      customElementsExportBehavior: 'bundle',
+      type: 'dist',
       empty: true,
-      generateTypeDeclarations: false,
-      minify: true,
     },
+    // {
+    //   type: 'dist-custom-elements',
+    //   customElementsExportBehavior: 'single-export-module',
+    //   empty: true,
+    //   generateTypeDeclarations: false,
+    //   minify: true,
+    // },
   ],
   sourceMap: false,
   testing: {

@@ -1,15 +1,1 @@
-import { r as registerInstance, h, a as Host } from './index-0ca2659e.js';
-
-const instruqtButtonCss = ":host{display:block}";
-
-const InstruqtButton = class {
-    constructor(hostRef) {
-        registerInstance(this, hostRef);
-    }
-    render() {
-        return (h(Host, { key: 'ecf4cb23fdaa3d2d1bed75483179d27c15335c4d' }, h("slot", { key: '18e3c218eafed2fbfa6d26d7979a7abb54329bd1' })));
-    }
-};
-InstruqtButton.style = instruqtButtonCss;
-
-export { InstruqtButton as instruqt_button };
+import{r as e,h as c,H as s}from"./index-8e5c4f45.js";const t=class{constructor(c){e(this,c)}render(){return c(s,{key:"6fc2c65e4a8cc20384be88f03bdd9b1e3f36ea91"},c("slot",{key:"fcd61a309d87ee8e9f5314aeb591c4844d2c2ed9"}))}};t.style=":host{display:block}";export{t as instruqt_button}
