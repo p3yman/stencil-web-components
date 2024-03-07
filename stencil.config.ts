@@ -1,24 +1,22 @@
 import { Config } from '@stencil/core';
 
 export const config: Config = {
-  namespace: 'stencil-web-components',
+  namespace: 'instruqt',
   outputTargets: [
     {
-      type: 'dist',
-      esmLoaderPath: '../loader',
-    },
-    {
       type: 'dist-custom-elements',
-    },
-    {
-      type: 'docs-readme',
-    },
-    {
-      type: 'www',
-      serviceWorker: null, // disable service workers
+      customElementsExportBehavior: 'bundle',
+      empty: true,
+      generateTypeDeclarations: false,
+      minify: true,
     },
   ],
+  sourceMap: false,
   testing: {
-    browserHeadless: "new",
+    browserHeadless: 'new',
+  },
+  hashFileNames: false,
+  devServer: {
+    initialLoadUrl: '/src',
   },
 };

@@ -6,56 +6,58 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface InstruqtAlert {
+    }
+    interface InstruqtButton {
+    }
+    interface InstruqtSection {
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLInstruqtAlertElement extends Components.InstruqtAlert, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLInstruqtAlertElement: {
+        prototype: HTMLInstruqtAlertElement;
+        new (): HTMLInstruqtAlertElement;
+    };
+    interface HTMLInstruqtButtonElement extends Components.InstruqtButton, HTMLStencilElement {
+    }
+    var HTMLInstruqtButtonElement: {
+        prototype: HTMLInstruqtButtonElement;
+        new (): HTMLInstruqtButtonElement;
+    };
+    interface HTMLInstruqtSectionElement extends Components.InstruqtSection, HTMLStencilElement {
+    }
+    var HTMLInstruqtSectionElement: {
+        prototype: HTMLInstruqtSectionElement;
+        new (): HTMLInstruqtSectionElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "instruqt-alert": HTMLInstruqtAlertElement;
+        "instruqt-button": HTMLInstruqtButtonElement;
+        "instruqt-section": HTMLInstruqtSectionElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+    interface InstruqtAlert {
+    }
+    interface InstruqtButton {
+    }
+    interface InstruqtSection {
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "instruqt-alert": InstruqtAlert;
+        "instruqt-button": InstruqtButton;
+        "instruqt-section": InstruqtSection;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "instruqt-alert": LocalJSX.InstruqtAlert & JSXBase.HTMLAttributes<HTMLInstruqtAlertElement>;
+            "instruqt-button": LocalJSX.InstruqtButton & JSXBase.HTMLAttributes<HTMLInstruqtButtonElement>;
+            "instruqt-section": LocalJSX.InstruqtSection & JSXBase.HTMLAttributes<HTMLInstruqtSectionElement>;
         }
     }
 }
